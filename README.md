@@ -1,7 +1,4 @@
 ## Requirements
-You need these modules to run this script(notebook):
-
-
 python-mnist
 
 PyTorch (You can download this via https://pytorch.org/)
