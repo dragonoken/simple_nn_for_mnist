@@ -11,7 +11,7 @@ matplotlib
 I made my first working model in Jupyter Notebook.
 This model takes 784 inputs (28 * 28, each ranging from 0 to 1), has 1 hidden layer with 100 hidden units, and output 10 probability values each corresponding to the probability of the input being a specific number.
 
-The model was trained on 60000 training examples of hand-written 28 by 28 digits for about 10,000 iterations in total.
+The model was trained on 60000 training examples of hand-written digits as 28 by 28 pixel images for about 10,000 iterations in total.
 
 5 examples with the least loss value (most correct):
 ![5 most correct](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/most_correct_5.png)
