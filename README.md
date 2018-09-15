@@ -1,5 +1,6 @@
 ## Requirements
-You need these modules to run this script(notebook)
+You need these modules to run this script(notebook):
+
 
 python-mnist
 
