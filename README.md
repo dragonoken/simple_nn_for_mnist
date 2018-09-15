@@ -1,4 +1,15 @@
-## Current Status
+## Requirements
+You need these modules to run this script(notebook)
+
+python-mnist
+
+PyTorch (You can download this via https://pytorch.org/)
+
+numpy
+
+matplotlib
+
+## Current Status (Sep 14th 2018)
 I made my first working model in Jupyter Notebook.
 This model takes 784 inputs (28 * 28, each ranging from 0 to 1), has 1 hidden layer with 100 hidden units, and output 10 probability values each corresponding to the probability of the input being a specific number.
 
@@ -13,11 +24,3 @@ Those are hard for me, too....
 
 It was my first time actually using a machine learning framework other than scikit-learn (I have tensorflow, but I haven't used it myself).
 The problem of autograd not working was the biggest problem...
-
-## Requirements
-You need these modules to run this script(notebook)
-
-python-mnist
-PyTorch (You can download this via https://pytorch.org/)
-numpy
-matplotlib
