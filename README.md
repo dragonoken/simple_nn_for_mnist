@@ -7,8 +7,6 @@ numpy
 
 matplotlib
 
----
-
 # To-Do List
 
 * Create a dataset class that contains (or rather loads) MNIST dataset with pytorch
@@ -16,8 +14,6 @@ matplotlib
 * Make use of sophisticated optimization algorithms provided
 * Implement CLR from ["Cyclical Learning Rates for Training Neural Networks"](https://arxiv.org/abs/1506.01186)
 (CLR with cosine annealing is already provided, but I would like to implement the original ones in the paper.)
-
----
 
 # Update History
 
