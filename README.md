@@ -1,4 +1,4 @@
-## Requirements
+# Requirements
 python-mnist
 
 PyTorch (You can download this via https://pytorch.org/)
@@ -7,7 +7,30 @@ numpy
 
 matplotlib
 
-## Current Status (Sep 17th 2018)
+---
+
+# To-Do List
+
+* Create a dataset class that contains (or rather loads) MNIST dataset with pytorch
+* Modularize the classifier using pytorch base classes and neural network functions
+* Make use of sophisticated optimization algorithms provided
+* Implement CLR from ["Cyclical Learning Rates for Training Neural Networks"](https://arxiv.org/abs/1506.01186)
+(CLR with cosine annealing is already provided, but I would like to implement the original ones in the paper.)
+
+---
+
+# Update History
+
+### Current Status (Oct 4th 2018)
+
+Lots of features and other stuff are added...
+
+I will further elaborate in details later
+
+---
+
+### Sep 17th 2018
+
 I tried to implement an algorithm (from the lectures in fast.ai) for finding the best value for the learning rate.
 
 This algorithm initially sets the learning rate to a small value, then, as it trains the parameters, it increases the learning rate exponentially while keeping track of past learning rates and corresponding loss values. When the loss value starts to "explode," the algorithm stops training --it detects the explosion by comparing the current loss value and another loss value from few steps back.
@@ -27,7 +50,10 @@ I'll try to look into the actual code and methods to fix this thing.
 
 And also, I'm going to try and implement the "Gradient Descent with Reset", make use of the validation set I made to fit the hyperparameters, and change the overall structure of the neural network (adding more hidden layers! my graphics card is not working hard enough!).
 
-## Sep 14th 2018
+---
+
+### Sep 14th 2018
+
 I made my first working model in Jupyter Notebook.
 This model takes 784 inputs (28 * 28, each ranging from 0 to 1), has 1 hidden layer with 100 hidden units, and output 10 probability values each corresponding to the probability of the input being a specific number.
 
