@@ -24,8 +24,9 @@ For the past few weeks, I've read through some papers and articles about several
 One of them was a method to find a good learning rate. I've already implemented this, but it seemed like increasing the learning rate exponentially hardly gives a good result when finding the right learning rate, at least for this particular dataset and model. I read the original paper ["Cyclical Learning Rates for Training Neural Networks"](https://arxiv.org/abs/1506.01186) and then changed the function so that it tests out many learning rate values as it increases the learning rate linearly and not exponentially. Also, I changed the resulting plot from {loss} vs. {learning rate} to {accuracy} vs. {learning rate}. The result of this modification gave me a plot that was easy to interpret (since the accuracy ranges from 0 to 1, unlike the loss which is rather unbounded) and matched my intuition from over 10000 iterations of training about the optimal value.
 
 Result from modified learning rate finding function
+
 ![modified learning rate plot](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/lr_plot.png)
-<br>
+
 Also, I found some other ways of initializing weights in a way that gives good results in less number of iterations. Specifically, I implemented He et al initialization method and Xavier initialization method. They are now part of my 'reset' function, so I can re-initialize my weights and biases in one of 4 options: uniform, standard normal, He, and Xavier. This function now takes an optional key argument for specifying which method to use. After trying out each of them, I found a quite significant improvement in learning.
 
 ![train losses with different initialization methods](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/train_losses.png)
