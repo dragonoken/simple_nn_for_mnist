@@ -25,7 +25,7 @@ One of them was a method to find a good learning rate. I've already implemented 
 
 Result from modified learning rate finding function
 
-![modified learning rate plot](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/lr_plot.png)
+![modified learning rate plot](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/modified_lr_plot.png)
 
 Also, I found some other ways of initializing weights in a way that gives good results in less number of iterations. Specifically, I implemented He et al initialization method and Xavier initialization method. They are now part of my 'reset' function, so I can re-initialize my weights and biases in one of 4 options: uniform, standard normal, He, and Xavier. This function now takes an optional key argument for specifying which method to use. After trying out each of them, I found a quite significant improvement in learning.
 
