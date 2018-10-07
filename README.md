@@ -25,11 +25,11 @@ One of them was a method to find a good learning rate. I've already implemented 
 
 Result from modified learning rate finding function
 
-![modified learning rate plot](https://raw.githubusercontent.com/dragonoken/simple_nn_for_mnist/blob/master/plots/modified_lr_plot.png)
+![modified learning rate plot](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/modified_lr_plot.png)
 
 Also, I found some other ways of initializing weights in a way that gives good results in less number of iterations. Specifically, I implemented He et al initialization method and Xavier initialization method. They are now part of my 'reset' function, so I can re-initialize my weights and biases in one of 4 options: uniform, standard normal, He, and Xavier. This function now takes an optional key argument for specifying which method to use. After trying out each of them, I found a quite significant improvement in learning.
 
-![train losses with different initialization methods](https://raw.githubusercontent.com/dragonoken/simple_nn_for_mnist/blob/master/plots/train_losses.png)
+![train losses with different initialization methods](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/train_losses.png)
 
 Oh, I almost forgot to mention it, but I also implemented Stochastic Gradient Descent! But it appears that the size of the data is small enough to just do Batch Gradient Descent as I've been doing. Not sure if it will give some boost in speed when using CPU, not GPU, though.
 
@@ -44,7 +44,7 @@ This algorithm initially sets the learning rate to a small value, then, as it tr
 The algorithm, as a function, returns the entire lists of learning rates and corresponding loss values.
 
 Here, I implemented a simple plotting fuction to visualize the learning rate curve.
-![learning rate plot](https://raw.githubusercontent.com/dragonoken/simple_nn_for_mnist/blob/master/plots/lr_plot.png)
+![learning rate plot](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/lr_plot.png)
 
 ...which suggests that the model seems to be improving fast when the learning rate is around 0.1 or less.
 
@@ -66,10 +66,10 @@ This model takes 784 inputs (28 * 28, each ranging from 0 to 1), has 1 hidden la
 The model was trained on 60000 training examples of hand-written digits as 28 by 28 pixel images for about 10,000 iterations in total.
 
 5 examples with the least loss value (most correct):
-![5 most correct](https://raw.githubusercontent.com/dragonoken/simple_nn_for_mnist/blob/master/plots/most_correct_5.png)
+![5 most correct](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/most_correct_5.png)
 
 5 examples with the most loss value (most incorrect):
-![5 most incorrect](https://raw.githubusercontent.com/dragonoken/simple_nn_for_mnist/blob/master/plots/most_incorrect_5.png)
+![5 most incorrect](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/most_incorrect_5.png)
 Those are hard for me, too....
 
 It was my first time actually using a machine learning framework other than scikit-learn (I have tensorflow, but I haven't used it myself).
