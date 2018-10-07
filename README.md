@@ -31,7 +31,8 @@ Also, I found some other ways of initializing weights in a way that gives good r
 
 ![train losses with different initialization methods](https://github.com/dragonoken/simple_nn_for_mnist/blob/master/plots/train_losses.png)
 
-Oh, I almost forgot to mention it, but I also implemented Stochastic Gradient Descent! But it appears that the size of the data is small enough to just do Batch Gradient Descent as I've been doing. Not sure if it will give some boost in speed when using CPU, not GPU, though.
+<br />
+Oh, I almost forgot to mention it, but I also implemented Stochastic Gradient Descent! But it appears that the size of the data is small enough to just do Batch Gradient Descent as I've been doing. Not sure if it will give some boost in speed when using CPU, and not GPU, though.
 
 ---
 
@@ -50,7 +51,7 @@ Here, I implemented a simple plotting fuction to visualize the learning rate cur
 
 However, when I actually tried the learning rate of 0.1 for 100 iterations, it hardly improved a bit. In fact, in the same amount of iteration, learning rate of 1 gave me a huge improvement in training accuracy from about 10% to almost 85%!
 
-It's very likely that I have implemented this in a proper way... or at least I hope that's the case.
+It's very likely that I have not implemented this in a proper way... or at least I hope that's the case.
 
 I'll try to look into the actual code and methods to fix this thing.
 
