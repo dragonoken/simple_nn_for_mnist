@@ -1,4 +1,6 @@
-# Requirements
+# Simple Neural Network for MNIST dataset
+
+## Requirements
 python-mnist
 
 PyTorch (You can download this via https://pytorch.org/)
@@ -7,7 +9,7 @@ numpy
 
 matplotlib
 
-# To-Do List
+## To-Do List
 
 * Create a dataset class that contains (or rather loads) MNIST dataset with pytorch
 * Modularize the classifier using pytorch base classes and neural network functions
@@ -15,7 +17,7 @@ matplotlib
 * Implement CLR from ["Cyclical Learning Rates for Training Neural Networks"](https://arxiv.org/abs/1506.01186)
 (CLR with cosine annealing is already provided, but I would like to implement the original ones in the paper.)
 
-# Update History
+## Update History
 
 ### Current Status (Oct 4th 2018)
 
